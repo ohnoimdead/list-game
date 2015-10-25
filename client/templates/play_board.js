@@ -40,15 +40,10 @@ Template.PlayBoard.events({
     var target = $(evt.target);
 
     if(target.hasClass('right-area')) {
-      if(target.hasClass('team-a-highlight')) {
-        target.removeClass('team-a-highlight');
-        target.addClass('team-b-highlight');
-      }
-      else if(target.hasClass('team-b-highlight')) {
-        target.removeClass('team-b-highlight');
-      }
-      else {
-        target.addClass('team-a-highlight');
+      if(target.hasClass('contested-highlight')) {
+        target.removeClass('contested-highlight');
+      } else {
+        target.addClass('contested-highlight');
       }
 
       return;
@@ -61,10 +56,14 @@ Template.PlayBoard.events({
     if(target.find('.space-overlay').is(':visible')) {
       target.find('.space-value').show();
       target.find('.space-overlay').hide();
-      target.addClass('team-a');
+      target.addClass('revealed');
     } else {
       // cycle through the various states for the cell
-      if(target.hasClass('team-a')) {
+      if(target.hasClass('revealed')) {
+        target.removeClass('revealed');
+        target.addClass('team-a');
+      }
+      else if(target.hasClass('team-a')) {
         target.removeClass('team-a');
         target.addClass('team-b');
       }

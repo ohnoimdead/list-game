@@ -2,6 +2,7 @@
 @dark-accent: #999;
 @links: #363;
 @warn-color: #F00;
+@revealed: black;
 @team-a: purple;
 @team-b: orange;
 @contested: red;
@@ -158,6 +159,11 @@ input[type="button"] {
   }
 }
 
+.revealed {
+  background-color: @revealed;
+  color: white;
+}
+
 .team-a {
   background-color: @team-a;
   color: white;
@@ -179,4 +185,8 @@ input[type="button"] {
 
 .team-b-highlight {
   border-right: 8px solid @team-b;
+}
+
+.contested-highlight {
+  border-right: 8px solid @contested;
 }
