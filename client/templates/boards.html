@@ -1,0 +1,15 @@
+<template name="Boards">
+  <h2>Available Boards<a href="/new_board">New Board</a></h2>
+
+  {{#each boards}}
+  <div class="board-item">
+    <span>{{name}}</span>
+    <div class="board-item-actions">
+      <a href="/delete/{{_id}}" class="warn">Delete</a>
+      <a href="/edit/{{_id}}">Edit</a>
+      <a href="/play/{{_id}}">Play</a>
+    </div>
+  </div>
+  {{/each}}
+
+</template>

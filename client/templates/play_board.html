@@ -1,0 +1,9 @@
+<template name="PlayBoard">
+  {{#each getRandomValues .}}
+  <div class="board-space">
+    <div class="right-area"></div>
+    <div class="space-overlay">{{fixIndex @index}}</div>
+    <div class="space-value">{{dealWithBlanks .}}</div>
+  </div>
+  {{/each}}
+</template>

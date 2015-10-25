@@ -1,0 +1,9 @@
+<template name="EditBoard">
+  <a href="/" class="breadcrumb">&laquo; Back to Boards</a>
+  <h2>Edit Board &quot;{{name}}&quot;</h2>
+
+  <form id="editBoardForm">
+    {{> BoardForm}}
+    <input type="submit" value="Save Board">
+  </form>
+</template>

@@ -1,0 +1,145 @@
+<template name="BoardForm">
+  <input type="hidden" id="boardId" name="boardId" value="{{_id}}">
+  <div class="form-field">
+    <label for="boardName">Board Name</label>
+    <input type="text" id="boardName" name="boardName" required="true" value="{{name}}">
+  </div>
+  <div class="form-field">
+    <label for="firstCategoryName">First Category Name</label>
+    <input type="text" id="firstCategoryName" name="firstCategoryName" required="true" value="{{firstCategoryName}}">
+  </div>
+  <div class="form-field">
+    <label for="secondCategoryName">Second Category Name</label>
+    <input type="text" id="secondCategoryName" name="secondCategoryName" required="true" value="{{secondCategoryName}}">
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>First Category</th>
+        <th>Second Category</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01 <input type="text" id="firstCategory1" name="firstCategory1" value="{{category1.[0]}}"></td>
+        <td>01 <input type="text" id="secondCategory1" name="secondCategory1" value="{{category2.[0]}}"></td>
+      </tr>
+      <tr>
+        <td>02 <input type="text" id="firstCategory2" name="firstCategory2" value="{{category1.[1]}}"></td>
+        <td>02 <input type="text" id="secondCategory2" name="secondCategory2" value="{{category2.[1]}}"></td>
+      </tr>
+      <tr>
+        <td>03 <input type="text" id="firstCategory3" name="firstCategory3" value="{{category1.[2]}}"></td>
+        <td>03 <input type="text" id="secondCategory3" name="secondCategory3" value="{{category2.[2]}}"></td>
+      </tr>
+      <tr>
+        <td>04 <input type="text" id="firstCategory4" name="firstCategory4" value="{{category1.[3]}}"></td>
+        <td>04 <input type="text" id="secondCategory4" name="secondCategory4" value="{{category2.[3]}}"></td>
+      </tr>
+      <tr>
+        <td>05 <input type="text" id="firstCategory5" name="firstCategory5" value="{{category1.[4]}}"></td>
+        <td>05 <input type="text" id="secondCategory5" name="secondCategory5" value="{{category2.[4]}}"></td>
+      </tr>
+      <tr>
+        <td>06 <input type="text" id="firstCategory6" name="firstCategory6" value="{{category1.[5]}}"></td>
+        <td>06 <input type="text" id="secondCategory6" name="secondCategory6" value="{{category2.[5]}}"></td>
+      </tr>
+      <tr>
+        <td>07 <input type="text" id="firstCategory7" name="firstCategory7" value="{{category1.[6]}}"></td>
+        <td>07 <input type="text" id="secondCategory7" name="secondCategory7" value="{{category2.[6]}}"></td>
+      </tr>
+      <tr>
+        <td>08 <input type="text" id="firstCategory8" name="firstCategory8" value="{{category1.[7]}}"></td>
+        <td>08 <input type="text" id="secondCategory8" name="secondCategory8" value="{{category2.[7]}}"></td>
+      </tr>
+      <tr>
+        <td>09 <input type="text" id="firstCategory9" name="firstCategory9" value="{{category1.[8]}}"></td>
+        <td>09 <input type="text" id="secondCategory9" name="secondCategory9" value="{{category2.[8]}}"></td>
+      </tr>
+      <tr>
+        <td>10 <input type="text" id="firstCategory10" name="firstCategory10" value="{{category1.[9]}}"></td>
+        <td>10 <input type="text" id="secondCategory10" name="secondCategory10" value="{{category2.[9]}}"></td>
+      </tr>
+      <tr>
+        <td>11 <input type="text" id="firstCategory11" name="firstCategory11" value="{{category1.[10]}}"></td>
+        <td>11 <input type="text" id="secondCategory11" name="secondCategory11" value="{{category2.[10]}}"></td>
+      </tr>
+      <tr>
+        <td>12 <input type="text" id="firstCategory12" name="firstCategory12" value="{{category1.[11]}}"></td>
+        <td>12 <input type="text" id="secondCategory12" name="secondCategory12" value="{{category2.[11]}}"></td>
+      </tr>
+      <tr>
+        <td>13 <input type="text" id="firstCategory13" name="firstCategory13" value="{{category1.[12]}}"></td>
+        <td>13 <input type="text" id="secondCategory13" name="secondCategory13" value="{{category2.[12]}}"></td>
+      </tr>
+      <tr>
+        <td>14 <input type="text" id="firstCategory14" name="firstCategory14" value="{{category1.[13]}}"></td>
+        <td>14 <input type="text" id="secondCategory14" name="secondCategory14" value="{{category2.[13]}}"></td>
+      </tr>
+      <tr>
+        <td>15 <input type="text" id="firstCategory15" name="firstCategory15" value="{{category1.[14]}}"></td>
+        <td>15 <input type="text" id="secondCategory15" name="secondCategory15" value="{{category2.[14]}}"></td>
+      </tr>
+      <tr>
+        <td>16 <input type="text" id="firstCategory16" name="firstCategory16" value="{{category1.[15]}}"></td>
+        <td>16 <input type="text" id="secondCategory16" name="secondCategory16" value="{{category2.[15]}}"></td>
+      </tr>
+      <tr>
+        <td>17 <input type="text" id="firstCategory17" name="firstCategory17" value="{{category1.[16]}}"></td>
+        <td>17 <input type="text" id="secondCategory17" name="secondCategory17" value="{{category2.[16]}}"></td>
+      </tr>
+      <tr>
+        <td>18 <input type="text" id="firstCategory18" name="firstCategory18" value="{{category1.[17]}}"></td>
+        <td>18 <input type="text" id="secondCategory18" name="secondCategory18" value="{{category2.[17]}}"></td>
+      </tr>
+      <tr>
+        <td>19 <input type="text" id="firstCategory19" name="firstCategory19" value="{{category1.[18]}}"></td>
+        <td>19 <input type="text" id="secondCategory19" name="secondCategory19" value="{{category2.[18]}}"></td>
+      </tr>
+      <tr>
+        <td>20 <input type="text" id="firstCategory20" name="firstCategory20" value="{{category1.[19]}}"></td>
+        <td>20 <input type="text" id="secondCategory20" name="secondCategory20" value="{{category2.[19]}}"></td>
+      </tr>
+      <tr>
+        <td>21 <input type="text" id="firstCategory21" name="firstCategory21" value="{{category1.[20]}}"></td>
+        <td>21 <input type="text" id="secondCategory21" name="secondCategory21" value="{{category2.[20]}}"></td>
+      </tr>
+      <tr>
+        <td>22 <input type="text" id="firstCategory22" name="firstCategory22" value="{{category1.[21]}}"></td>
+        <td>22 <input type="text" id="secondCategory22" name="secondCategory22" value="{{category2.[21]}}"></td>
+      </tr>
+      <tr>
+        <td>23 <input type="text" id="firstCategory23" name="firstCategory23" value="{{category1.[22]}}"></td>
+        <td>23 <input type="text" id="secondCategory23" name="secondCategory23" value="{{category2.[22]}}"></td>
+      </tr>
+      <tr>
+        <td>24 <input type="text" id="firstCategory24" name="firstCategory24" value="{{category1.[23]}}"></td>
+        <td>24 <input type="text" id="secondCategory24" name="secondCategory24" value="{{category2.[23]}}"></td>
+      </tr>
+      <tr>
+        <td>25 <input type="text" id="firstCategory25" name="firstCategory25" value="{{category1.[24]}}"></td>
+        <td>25 <input type="text" id="secondCategory25" name="secondCategory25" value="{{category2.[24]}}"></td>
+      </tr>
+      <tr>
+        <td>26 <input type="text" id="firstCategory26" name="firstCategory26" value="{{category1.[25]}}"></td>
+        <td>26 <input type="text" id="secondCategory26" name="secondCategory26" value="{{category2.[25]}}"></td>
+      </tr>
+      <tr>
+        <td>27 <input type="text" id="firstCategory27" name="firstCategory27" value="{{category1.[26]}}"></td>
+        <td>27 <input type="text" id="secondCategory27" name="secondCategory27" value="{{category2.[26]}}"></td>
+      </tr>
+      <tr>
+        <td>28 <input type="text" id="firstCategory28" name="firstCategory28" value="{{category1.[27]}}"></td>
+        <td>28 <input type="text" id="secondCategory28" name="secondCategory28" value="{{category2.[27]}}"></td>
+      </tr>
+      <tr>
+        <td>29 <input type="text" id="firstCategory29" name="firstCategory29" value="{{category1.[28]}}"></td>
+        <td>29 <input type="text" id="secondCategory29" name="secondCategory29" value="{{category2.[28]}}"></td>
+      </tr>
+      <tr>
+        <td>30 <input type="text" id="firstCategory30" name="firstCategory30" value="{{category1.[29]}}"></td>
+        <td>30 <input type="text" id="secondCategory30" name="secondCategory30" value="{{category2.[29]}}"></td>
+      </tr>
+    </tbody>
+  </table>
+</template>
