@@ -1,5 +1,5 @@
 Template.Boards.helpers({
   'boards': function() {
-    return Boards.find({}, {sort: {lowerName: 1}});
+    return Boards.find({}, {sort: {slug: 1}});
   }
 });

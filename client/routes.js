@@ -8,29 +8,29 @@ Router.route('/new_board', function() {
   this.render('NewBoard');
 });
 
-Router.route('/delete/:_id', function() {
+Router.route('/delete/:slug', function() {
   this.layout('NotPlayingLayout');
   this.render('DeleteBoard', {
     data: function() {
-      return Boards.findOne({_id: this.params._id});
+      return Boards.findOne({slug: this.params.slug});
     }
   });
 });
 
-Router.route('/edit/:_id', function() {
+Router.route('/edit/:slug', function() {
   this.layout('NotPlayingLayout');
   this.render('EditBoard', {
     data: function() {
-      return Boards.findOne({_id: this.params._id});
+      return Boards.findOne({slug: this.params.slug});
     }
   });
 });
 
-Router.route('/play/:_id', function() {
+Router.route('/play/:slug', function() {
   this.layout('PlayingLayout');
   this.render('PlayBoard', {
     data: function() {
-      return Boards.findOne(this.params._id);
+      return Boards.findOne({slug: this.params.slug});
     }
   });
 });

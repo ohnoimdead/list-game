@@ -2,7 +2,7 @@ UpsertBoard = function(formTarget) {
   var board = {};
 
   board.name = formTarget.boardName.value;
-  board.lowerName = formTarget.boardName.value.toLowerCase();
+  board.slug = formTarget.boardName.value.toLowerCase().replace(/\ /g, '_'); // this is far too naive
   board.firstCategoryName = formTarget.firstCategoryName.value;
   board.secondCategoryName = formTarget.secondCategoryName.value;
 
@@ -14,5 +14,5 @@ UpsertBoard = function(formTarget) {
     board.category2.push(formTarget['secondCategory' + i].value);
   }
 
-  Boards.update(formTarget.boardId.value, board, {upsert: true});
+  Meteor.call('upsertBoard', board);
 };
